@@ -1,0 +1,143 @@
+/* variáveis na raíz do css para facilitar encontrar algumas configurações e facilitar a vida :) */
+
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* elementos de base */
+
+body {
+  background: var(--preto);
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+header .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  width: 6rem;
+  margin-left: 2.5rem;
+}
+
+nav .menu {
+  display: flex;
+  position: relative;
+  right: 40rem;
+  top: 20px;
+  align-items: initial;
+  justify-content: space-between;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #aaa;
+  padding-right: 30px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+.icones {
+  position: relative;
+  align-items: center;
+  margin-left: 10rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.icones .fas {
+  font-size: 1.3rem;
+  justify-content: space-around;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+/* filme principal */
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+<<<<<<< HEAD
+    url("./img/chuck-serie.png");
+=======
+    url("./img/chuck-serie.png")
+>>>>>>> 0a13ed990319177477b67945d10793cdaf07a7f8
+  height: 30rem;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.titulo,
+.descricao-filme,
+.botoes {
+  margin-left: 3.5rem;
+}
+
+.titulo {
+  font-size: 5rem;
+}
+
+.descricao-filme {
+  margin-bottom: 2rem;
+  width: 50rem;
+}
+
+.botao {
+  padding: 0.5rem 2.4rem 0.5rem 2rem;
+  border-radius: 7px;
+  border: transparent;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.botao:hover {
+  transition: 1s ease all;
+  background-color: #fff;
+  color: #141414;
+}
+
+.botao span {
+  padding-left: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* carrossel de filmes */
+
+.box-filmes {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrossel-filmes {
+  margin-top: 5px;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+}
